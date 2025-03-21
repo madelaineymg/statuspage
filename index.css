@@ -7,9 +7,10 @@ html {
   display: flex;
   flex-direction: column;
 }
+
 body {
-  background-color: #f5f6f8;
-  color: #3b3b3b;
+  background-color: #0f0f14;  /* Dark blueish background resembling a TV screen */
+  color: #d0d0d0;  /* Light grayish text */
   font-size: 14px;
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -21,6 +22,7 @@ body {
   text-align: center;
   transition: opacity 0.3s;
 }
+
 h1,
 h2,
 h3,
@@ -39,53 +41,59 @@ textarea,
 }
 
 h1 {
-  color: #3b3b3b;
+  color: #d0d0d0;  /* Lighter text */
   font-size: 32px;
   font-weight: bold;
   margin: 0px;
 }
+
 h2 {
-  color: #3b3b3b;
+  color: #d0d0d0;
   font-size: 28px;
   font-weight: bold;
   margin: 16px 0 8px 0;
 }
+
 h3 {
-  color: #3b3b3b;
+  color: #d0d0d0;
   font-size: 24px;
   font-weight: 700;
   margin: 8px 0 4px 0;
 }
+
 h4 {
-  color: #3b3b3b;
+  color: #d0d0d0;
   font-size: 18px;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 4px;
 }
+
 h5 {
-  color: #3b3b3b;
+  color: #d0d0d0;
   font-size: 16px;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 4px;
 }
+
 h6 {
-  color: #3b3b3b;
+  color: #d0d0d0;
   font-size: 16px;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 4px;
 }
+
 a {
-  color: #194b7d;
+  color: #5e97d1;  /* Soft blue links */
   text-decoration: none;
 }
 
 .outlineButton,
 .button,
 button {
-  background-color: #194b7d;
+  background-color: #5e97d1;  /* Blue button */
   border: none;
   border-radius: 8px;
   color: white;
@@ -97,7 +105,7 @@ button {
 }
 
 footer {
-  color: #9c9c9c;
+  color: #888;  /* Light gray footer text */
   margin: 40px;
 }
 
@@ -107,8 +115,8 @@ footer a {
 
 .pageContainer {
   padding: 30px 50px;
-  background-color: #fff;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  background-color: rgba(20, 20, 30, 0.8);  /* Semi-transparent dark blueish background */
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   max-width: 900px;
   width: 100%;
@@ -122,7 +130,7 @@ footer a {
 }
 
 .headline span {
-  background-color: #f5f6f8;
+  background-color: rgba(20, 20, 30, 0.8);  /* Same background as page container */
   border-radius: 5px;
   padding: 6px;
   margin-left: 12px;
@@ -137,15 +145,16 @@ footer a {
 }
 
 .statusContainer {
-  border: 1px solid #ededed;
+  border: 1px solid #333;  /* Darker border */
   border-radius: 5px;
   padding-top: 20px;
   text-align: left;
   padding: 24px;
+  background-color: rgba(30, 30, 40, 0.9);  /* Dark semi-transparent background */
 }
 
 .statusContainer + .statusContainer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #444;  /* Lighter border between status items */
   margin-top: 30px;
 }
 
@@ -167,6 +176,7 @@ footer a {
 
 .sectionUrl {
   font-size: 14px;
+  color: #bbb;  /* Lighter gray for URLs */
 }
 
 .statusTitle {
@@ -188,7 +198,7 @@ footer a {
 }
 
 .statusHeadline {
-  color: #eee;
+  color: #bbb;  /* Lighter text */
   padding: 4px 8px;
   border-radius: 15px;
   font-size: 12px;
@@ -199,12 +209,12 @@ footer a {
 .statusUptime {
   flex: 1;
   text-align: right;
-  color: #7c7c7c;
+  color: #bbb; /* Light grey uptime */
   font-size: 12px;
 }
 
 .uptimeContainer {
-  color: #999;
+  color: #777; /* Light grey text */
   display: flex;
   margin-top: 8px;
   font-size: 12px;
@@ -212,20 +222,22 @@ footer a {
 
 .uptimeContainer hr {
   border: none;
-  border-top: 1px dashed #eee;
+  border-top: 1px dashed #444444; /* Dark dashed line */
   width: 100%;
   margin: 10px;
 }
 
+/* Status Indicators */
 .success {
-  background-color: #4cae50;
+  background-color: #4cae50; /* Success green */
   color: #fff;
 }
 
 .failure {
-  background-color: #f44336;
+  background-color: #f44336; /* Failure red */
   color: #fff;
 }
+
 
 .nodata {
   background-color: #f8f8f8;
